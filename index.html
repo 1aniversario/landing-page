@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing con Carrusel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff;
+      color: #111;
+      text-align: center;
+    }
+    .swiper {
+      width: 100%;
+      height: 100vh;
+    }
+    .play-button {
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .flyer {
+      margin-top: 40px;
+      max-width: 90%;
+    }
+    .swiper-pagination-bullet {
+      background: #111 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="play-button" onclick="document.getElementById('bgmusic').play()">Play Música</button>
+  <audio id="bgmusic" loop>
+    <source src="https://www.dropbox.com/scl/fi/tq65wmu3mkq435zksss9k/Juli-n-lvarez-y-su-Norte-o-Banda-Regalo-de-Dios-4.mp3?rlkey=gbxgvcep194tlxsprfc2wcqq4&st=ajevhjcn&raw=1" type="audio/mpeg">
+  </audio>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/9ubha7259tc2tbbfwnak3/0f0940bd-e08e-4d6d-a6bc-488fcf32fee8.jpeg?rlkey=cyzx93cafz79mjph21248n29s&st=9gsx4znt&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/8v7z0cmjm0o0wdy3rc6ju/1d106fe4-f6f8-4cc0-8aa3-59d5d91b982a.jpeg?rlkey=0ky7ssg9n4oket9iwva3tunr2&st=3k9y5qo1&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/g61vhpwz02gvhns95v41m/1df004b7-5fa8-41e7-9b1f-352d26239d42.jpeg?rlkey=fuf72g6zpywjip9hr40tjul4i&st=xgo55x1l&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <img class="flyer" src="https://www.dropbox.com/scl/fi/dov1t8vr9f3gqqlv0fu0d/FELIZ-ANIVERSARIO-MI-AMOR-Estos-A-os-de-alegr-as-a-tu-lado-de-muchas-emociones-juntos-de-d-as-dif-ciles-y-de-d-as-felices-han-sido-de-lo-mejor-y-si-de-algo-estoy-seguro-es-de-que-quiero-seguir.png?rlkey=wrl7bscudfrw3083z77m7slw8&st=pv8ashx3&raw=1" alt="Flyer Promocional" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    });
+  </script>
+</body>
+</html>
