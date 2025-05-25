@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing con Carrusel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+    .swiper {
+      width: 100%;
+      height: 100vh;
+    }
+    .play-button {
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #fff;
+      color: #111;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .flyer {
+      margin-top: 40px;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="play-button" onclick="document.getElementById('bgmusic').play()">Play Música</button>
+  <audio id="bgmusic" loop>
+    <source src="https://www.dropbox.com/scl/fi/tq65wmu3mkq435zksss9k/Juli-n-lvarez-y-su-Norte-o-Banda-Regalo-de-Dios-4.mp3?rlkey=gbxgvcep194tlxsprfc2wcqq4&st=ajevhjcn&raw=1" type="audio/mpeg">
+  </audio>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/9ubha7259tc2tbbfwnak3/0f0940bd-e08e-4d6d-a6bc-488fcf32fee8.jpeg?rlkey=cyzx93cafz79mjph21248n29s&st=9gsx4znt&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/8v7z0cmjm0o0wdy3rc6ju/1d106fe4-f6f8-4cc0-8aa3-59d5d91b982a.jpeg?rlkey=0ky7ssg9n4oket9iwva3tunr2&st=3k9y5qo1&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/g61vhpwz02gvhns95v41m/1df004b7-5fa8-41e7-9b1f-352d26239d42.jpeg?rlkey=fuf72g6zpywjip9hr40tjul4i&st=xgo55x1l&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/ly9js0lqjqhky7g79ci7l/3f04cd0d-601a-42c7-8d3d-e47ba7cd36b7.jpeg?rlkey=isxppv9j20l893hsk43x59j8j&st=4u4tzrbd&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/d91lh1qssim279uh447np/5ea00bdb-bb07-4415-b9bd-71dd564726a7.jpeg?rlkey=zsmntbydtyo9gc8e2dvl17ckv&st=owz1g540&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/le9qardjq46hqc2jwwsh4/7a09edbd-5704-4d60-ac2e-2880b7c7fc68.jpeg?rlkey=cero93cgiazy93k1vsf64opzf&st=davk0axp&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/gbg3k90cks1v7td2k7t13/7b39f1c6-bb7f-4c2a-8b29-822db563fd6b.jpeg?rlkey=sweqxagpeppnelyebokoulygr&st=gu8deb1y&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/9mqlquwg9reas3i2cwuty/87fb94ca-ffbe-46c8-be55-3051ab5865ee.jpeg?rlkey=lamylwarucgqjapz0qvxrs68l&st=fpi11geo&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/4gcweywu6uo7e0fvi6ihp/457a372c-11d8-424b-acc4-909adaefd01c.jpeg?rlkey=k8ab5a9dr1i8vxwl0zfl18gi3&st=znrtdyeh&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/qlg3cwjao1cbvjiy2n7zk/573a8da6-41cb-4d8b-aae8-ee70e29daf4f.jpeg?rlkey=26wen62ntnc1l7qzprw8b28ne&st=6kbtgxjp&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/oi9lkwumaul909dsxefv9/1426f9e3-8a31-4038-b654-25603a4066b5.jpeg?rlkey=5vpj2ucehasmn7ow0zld82iyw&st=0aree4sk&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/5tcfxdsj4tiglzisqc1tu/5237a1f3-1eca-4487-95a6-d4f0ba4fb0c7.jpeg?rlkey=uz0369szr24svw6tmlit54xkg&st=lbpjico6&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/vpvxqkvxqmt9acfly75k8/71378b09-f0c2-464f-99dd-7071ff969870.jpeg?rlkey=uqz0udaqf2an2d9sba3iznggy&st=ixjtwk38&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/chb0lszf2vpqpghyx0f38/704595a0-55ae-4c1e-9209-021a1983d6c9.jpeg?rlkey=z18ltbctfehrte9yd5ihvxhqi&st=yh2srznx&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/217zuxcqfql39g62mvvlg/06024396-3509-452b-bee1-af4bbc7912f6.jpeg?rlkey=8qsb51i32t4bifwkv1y374grr&st=r1ypq67z&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/y5utewhwb3j3eit5i3n9p/a3ff86f0-3267-44e4-a450-c1b8e655aa81.jpeg?rlkey=nxvxgc5vqhwzljxjt8nniolqo&st=v6jo501m&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/hc0qkbblujeewjqwv1sji/c6e90520-b89f-4198-98b8-3d640a1a6949.jpeg?rlkey=c4gsp4zfw1a2b023p8ofzqdxe&st=0tdy6uoq&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/h32blh2vtx7vvdb6jkpi2/ddc5ad09-206c-441e-b2c8-fa46bd1b8424.jpeg?rlkey=rrgim2lxn1h5cknpvcnohi0uk&st=sn2oe1v8&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/4lrjg7b7epr2vxxdzqjir/ebb2d721-b563-4218-a97c-595aff7d460e.jpeg?rlkey=tvj8neggqc56zgahhvyhrfo6x&st=j8fvahc2&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+      <div class="swiper-slide"><img src="https://www.dropbox.com/scl/fi/dvp9prb9zlainzjtb19yx/ef96042a-d07a-494b-ba43-5e670c409920.jpeg?rlkey=144qkqhwiff7m3kz1495nlhtz&st=8injtib2&raw=1" style="width:100%; max-height:90vh; object-fit:contain;"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <img class="flyer" src="https://www.dropbox.com/scl/fi/dov1t8vr9f3gqqlv0fu0d/FELIZ-ANIVERSARIO-MI-AMOR-Estos-A-os-de-alegr-as-a-tu-lado-de-muchas-emociones-juntos-de-d-as-dif-ciles-y-de-d-as-felices-han-sido-de-lo-mejor-y-si-de-algo-estoy-seguro-es-de-que-quiero-seguir.png?rlkey=wrl7bscudfrw3083z77m7slw8&st=pv8ashx3&raw=1" alt="Flyer Promocional" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
